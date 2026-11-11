@@ -1,0 +1,14 @@
+Cuffless BP via PTT on BIDMC record 47 (real ECG+PPG+ABP, 125 Hz, 8 min)
+beats used            : 450  (73 for calibration, 377 for test)
+mean PTT              : 173 ms
+reference SBP (ABP)   : 106 mmHg (range 96-116)
+test-set error (MAE)  : 3.0 mmHg
+test-set correlation  : r = 0.45
+
+Sampling-resolution check (is 8 ms quantisation the limiting factor?)
+  distinct PTT values, sample-indexed : 9
+  distinct PTT values, sub-sample     : 450
+  MAE  sample-indexed / sub-sample    : 3.00 / 2.99 mmHg
+  r    sample-indexed / sub-sample    : 0.452 / 0.453
+  -> removing the quantisation does not improve the fit, so r is limited
+     by the PTT-pressure relationship itself, not by sampling resolution.
